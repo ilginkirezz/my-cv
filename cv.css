@@ -38,7 +38,7 @@ body {
     padding: 20px 0;
 }
 
-img {
+img{
     width: 200px;
     border-radius: 150px;
     padding: 20px;
@@ -54,7 +54,7 @@ img {
     text-transform: uppercase;
     letter-spacing: 5px;
     padding-bottom: 10px;
-    color: #ffffff;
+    color: #000000;
     position: relative;
     text-align: center;
     margin-bottom: 15px;
@@ -67,8 +67,23 @@ img {
     right: 30px;
     width: 150px;
     height: 3px;
-    background: #ffffff;
+    background: #000000;
 }
 .li_wrap1{
     padding-bottom: 20px;
+}
+.contact .li_wrap .icon{
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.contact .li_wrap{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

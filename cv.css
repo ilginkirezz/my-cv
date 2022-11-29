@@ -33,12 +33,12 @@ body {
     padding: 20px;
 }
 
-.left .image_holder {
+.left .image-holder {
     text-align: center;
     padding: 20px 0;
 }
 
-img{
+img {
     width: 200px;
     border-radius: 150px;
     padding: 20px;
@@ -69,13 +69,15 @@ img{
     height: 3px;
     background: #000000;
 }
-.li_wrap1{
+
+.li_wrap1 {
     padding-bottom: 20px;
 }
-.contact .li_wrap .icon{
+
+.contact .li_wrap .icon {
     width: 50px;
     height: 50px;
-    background: #ffffff;
+    background: #fefcd7;
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -84,9 +86,47 @@ img{
     margin-bottom: 4px;
     margin-right: 4px;
 }
-.contact .li_wrap{
+
+.contact .li_wrap {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+}
+.skills ul,
+.hobbies ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.skills .li_wrap,
+.hobbies .li_wrap{
+    width: 98px;
+    height: 98px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills .li_wrap{
+    background: #fefcd7;
+}
+.hobbies .li_wrap{
+    border: 2px solid #000000;
+}
+.skills .li_wrap:hover{
+    background-color: #b61117;
+}
+.skills .li_wrap:hover .icon,
+.skills .li_wrap:hover .text{
+    color: #000000;
+}
+.hobbies .li_wrap:hover{
+    background-color: #000000;
+}
+.hobbies .li_wrap:hover .icon,
+.hobbies .li_wrap:hover .text{
+    color: #fefcd7;
 }

@@ -17,20 +17,20 @@ body {
     background: #fffefd;
     margin: 50px auto;
     display: flex;
-    border-radius: 30px;
 }
 
 .left {
     background: #b61117;
     width: 300px;
     padding: 0 20px;
-    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-radius: 30px 0 0 30px;
     text-align: center;
 }
 
 .right {
     width: (100% - 250px);
-    padding: 20px;
+    border-bottom-right-radius: 30px;
 }
 
 .left .image-holder {
@@ -56,7 +56,7 @@ img {
     padding-bottom: 10px;
     color: #000000;
     position: relative;
-    text-align: center;
+    text-align: left;
     margin-bottom: 15px;
 }
 
@@ -64,10 +64,21 @@ img {
     content: "";
     position: absolute;
     top: 35px;
-    right: 30px;
     width: 150px;
     height: 3px;
     background: #000000;
+}
+
+.title1 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding-bottom: 10px;
+    color: #b61117;
+    position: relative;
+    text-align: right;
+    margin-bottom: 15px;
 }
 
 .li_wrap1 {
@@ -93,14 +104,16 @@ img {
     align-items: center;
     justify-content: flex-start;
 }
+
 .skills ul,
-.hobbies ul{
+.hobbies ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+
 .skills .li_wrap,
-.hobbies .li_wrap{
+.hobbies .li_wrap {
     width: 98px;
     height: 98px;
     margin-bottom: 15px;
@@ -110,23 +123,86 @@ img {
     align-items: center;
     justify-content: center;
 }
-.skills .li_wrap{
+
+.skills .li_wrap {
     background: #fefcd7;
 }
-.hobbies .li_wrap{
+
+.hobbies .li_wrap {
     border: 2px solid #000000;
 }
-.skills .li_wrap:hover{
+
+.skills .li_wrap:hover {
     background-color: #b61117;
 }
+
 .skills .li_wrap:hover .icon,
-.skills .li_wrap:hover .text{
+.skills .li_wrap:hover .text {
     color: #000000;
 }
-.hobbies .li_wrap:hover{
+
+.hobbies .li_wrap:hover {
     background-color: #000000;
 }
+
 .hobbies .li_wrap:hover .icon,
-.hobbies .li_wrap:hover .text{
+.hobbies .li_wrap:hover .text {
     color: #fefcd7;
+}
+
+.header {
+    background: #b61117;
+    padding: 15px 30px;
+    color: #000000;
+    height: 240px;
+    border-top-right-radius: 30px;
+}
+
+.header .name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fefcd7;
+}
+
+.header .role {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.header .about {
+    margin-top: 20px;
+}
+
+.right-inner .education {
+    margin-top: 30px;
+
+}
+
+.right-inner .li-wrap {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.right-inner .li-wrap .date {
+    width: 125px;
+    color: #b61117;
+    text-align: center;
+}
+
+.right-inner .li-wrap .info {
+    width: calc(100% - 125px);
+    padding-left: 5px;
+    position: relative;
+}
+
+.date:before {
+    content: "";
+    position: absolute;
+    top: auto;
+    left: auto;
+    right: 320px;
+    width: 300px;
+    height: 3px;
+    background: #b61117;
 }

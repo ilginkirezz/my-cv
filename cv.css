@@ -195,8 +195,13 @@ img {
     padding-left: 5px;
     position: relative;
 }
-
-.date:before {
+.right-inner .li-wrap .info-title{
+    text-transform: uppercase;
+    font-weight: 700;
+    Letter-spacing: 2px;
+    color: #b61117;
+}
+########.date:before {
     content: "";
     position: absolute;
     top: auto;
@@ -205,10 +210,4 @@ img {
     width: 300px;
     height: 3px;
     background: #b61117;
-}
-.right-inner .li-wrap .info-title{
-    text-transform: uppercase;
-    font-weight: 700;
-    Letter-spacing: 2px;
-    color: #b61117;
 }

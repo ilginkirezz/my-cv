@@ -14,7 +14,7 @@ body {
 
 .resume {
     width: 800px;
-    background: #fffefd;
+    background: #fefcd7;
     margin: 50px auto;
     display: flex;
 }
@@ -173,6 +173,10 @@ img {
 .header .about {
     margin-top: 20px;
 }
+.right-inner{
+    padding: 30px;
+    color: #000000;
+}
 
 .right-inner .education {
     margin-top: 30px;
@@ -188,6 +192,7 @@ img {
     width: 125px;
     color: #b61117;
     text-align: center;
+    padding-top: 20px;
 }
 
 .right-inner .li-wrap .info {
@@ -201,13 +206,31 @@ img {
     Letter-spacing: 2px;
     color: #b61117;
 }
-########.date:before {
+.right-inner .li-wrap .info-com{
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 3px;
+}
+.right-inner .li-wrap .info-cont{
+    margin-top: 15px;
+}
+.right-inner .li-wrap .info:before{
     content: "";
     position: absolute;
-    top: auto;
-    left: auto;
-    right: 330px;
-    width: 300px;
-    height: 3px;
-    background: #b61117;
+    top: 7px;
+    left: -10px;
+    width: 10px;
+    height: 10px;
+    background-color: #b61117;
+    border-radius: 50%;
+}
+.right-inner .li-wrap .info:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -6px;
+    width: 2px;
+    height: 90%;
+    background-color: #b61117;
+    border-radius: 50%;
 }
